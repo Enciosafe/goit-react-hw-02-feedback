@@ -1,0 +1,7 @@
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Apple Symbols', serif;
+    font-size: 30px;
+    color: green;
+}
