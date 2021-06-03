@@ -1,19 +1,19 @@
 .button {
-    font-family: 'Apple Symbols', serif;
-    font-size: 20px;
-    background-color: yellow;
-    border: solid 1px black;
-    border-radius: 5px;
-    margin-left: 10px;
-    padding: 10px;
-    cursor: pointer;
+  font-family: "Apple Symbols", serif;
+  font-size: 20px;
+  background-color: yellow;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .button:hover {
-    background-color: greenyellow;
-    color: white;
+  background-color: greenyellow;
+  color: white;
 }
 
 .title {
-    font-family: 'Apple Symbols', serif;
+  font-family: "Apple Symbols", serif;
 }
