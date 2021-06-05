@@ -4,16 +4,11 @@ import Statistics from "../Statistics/Statistics";
 import Notification from "../Notification/Notification";
 import s from "./Section.module.css";
 
-const Section = ({
-  state,
-  options: { incrementGood, incrementBad, incrementNeutral },
-}) => {
+const Section = ({ state, options: { onIncrement } }) => {
   return (
     <>
       <FeedbackOptions
-        onIncrementGood={incrementGood}
-        onIncrementBad={incrementBad}
-        onIncrementNeutral={incrementNeutral}
+        onIncrement={onIncrement}
         title="Please leave feedback"
       />
       <h2 className={s.title}>Statistics</h2>

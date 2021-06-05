@@ -8,27 +8,22 @@ class App extends React.Component {
     bad: 0,
   };
 
-  incrementGood = () => {
+  onIncrement = (e) => {
     this.setState((prevState) => {
-      return {
-        good: prevState.good + 1,
-      };
-    });
-  };
-
-  incrementNeutral = () => {
-    this.setState((prevState) => {
-      return {
-        neutral: prevState.neutral + 1,
-      };
-    });
-  };
-
-  incrementBad = () => {
-    this.setState((prevState) => {
-      return {
-        bad: prevState.bad + 1,
-      };
+      switch (e.target.name) {
+        case "good":
+          return {
+            good: prevState.good + 1,
+          };
+        case "neutral":
+          return {
+            neutral: prevState.neutral + 1,
+          };
+        case "bad":
+          return {
+            bad: prevState.bad + 1,
+          };
+      }
     });
   };
 
@@ -37,9 +32,7 @@ class App extends React.Component {
       <Section
         state={this.state}
         options={{
-          incrementGood: this.incrementGood,
-          incrementNeutral: this.incrementNeutral,
-          incrementBad: this.incrementBad,
+          onIncrement: this.onIncrement,
         }}
       />
     );
