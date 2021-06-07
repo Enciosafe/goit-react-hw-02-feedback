@@ -23,6 +23,8 @@ class App extends React.Component {
           return {
             bad: prevState.bad + 1,
           };
+        default:
+          return null;
       }
     });
   };
